@@ -1,0 +1,161 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/student1/cthanges/COE608/Lab6/simulation/qsim
+vCPU_TEST_Sim
+Z1 Ii`jXX1ljM<3ooBnIIL>mU2
+Z2 VD4Xfl_9czkNN5Jl]^TkD92
+Z3 d/home/student1/cthanges/COE608/Lab6/simulation/qsim
+Z4 w1712704990
+Z5 8Lab6.vo
+Z6 FLab6.vo
+L0 32
+Z7 OV;L;10.1e;51
+r1
+31
+Z8 !s90 -work|work|Lab6.vo|
+Z9 o-work work -O0
+Z10 n@c@p@u_@t@e@s@t_@sim
+!i10b 1
+Z11 !s100 NS<iRM3?ZG>[_`9Poe:Ia2
+!s85 0
+Z12 !s108 1712704992.808299
+Z13 !s107 Lab6.vo|
+!s101 -O0
+vCPU_TEST_Sim_vlg_check_tst
+!i10b 1
+Z14 !s100 LLa52h6iA<^k9jWTkl2:33
+Z15 Il1;PX<ZMThW3z4>eL2KfT2
+Z16 VAN8OL5PC]SYlnbFkPekba3
+R3
+Z17 w1712704986
+Z18 8cpu_test_sim.vwf.vt
+Z19 Fcpu_test_sim.vwf.vt
+L0 62
+R7
+r1
+!s85 0
+31
+Z20 !s108 1712704993.422870
+Z21 !s107 cpu_test_sim.vwf.vt|
+Z22 !s90 -work|work|cpu_test_sim.vwf.vt|
+!s101 -O0
+R9
+Z23 n@c@p@u_@t@e@s@t_@sim_vlg_check_tst
+vCPU_TEST_Sim_vlg_sample_tst
+!i10b 1
+Z24 !s100 _PgC^nlfzm>[F0<GD<efS0
+Z25 IHmkM5mVQ>nWK>nTG5IWZ=2
+Z26 V8I[2ieW7H@BD=24IJ7VZ<3
+R3
+R17
+R18
+R19
+L0 30
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@c@p@u_@t@e@s@t_@sim_vlg_sample_tst
+vCPU_TEST_Sim_vlg_vec_tst
+!i10b 1
+Z28 !s100 hfVICW9:kc<SnnI3YRR6m3
+Z29 In48dAf46A]k2`DkNDDWlU0
+Z30 VjbJ[P:gO<7[a^MA>VFC3^0
+R3
+R17
+R18
+R19
+Z31 L0 3947
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@c@p@u_@t@e@s@t_@sim_vlg_vec_tst
+vreset_circuit
+Z33 I9XM0PY==mV6Ka_[;N9AhH3
+Z34 Vl?33`^UW]BWdQc<zoN`OF0
+R3
+Z35 w1712547258
+R5
+R6
+L0 32
+R7
+r1
+31
+R9
+Z36 !s100 AlTMQTJaF0^3ZZ43N99Xb0
+Z37 !s108 1712547261.118165
+R13
+R8
+!i10b 1
+!s85 0
+!s101 -O0
+vreset_circuit_vlg_check_tst
+Z38 I?hQ`8z2gmFOH8PM9OZSAQ0
+Z39 VK;WiQm8:BgIaYSYjRX=950
+R3
+Z40 w1712547254
+Z41 8reset_circuit.vwf.vt
+Z42 Freset_circuit.vwf.vt
+L0 60
+R7
+r1
+31
+Z43 !s108 1712547261.274646
+Z44 !s107 reset_circuit.vwf.vt|
+Z45 !s90 -work|work|reset_circuit.vwf.vt|
+R9
+Z46 !s100 kzA>Y;KM2`O?k5`IBgQQY0
+!i10b 1
+!s85 0
+!s101 -O0
+vreset_circuit_vlg_sample_tst
+Z47 I?PKZIMOh]JSFDKVPZ3<`f3
+Z48 V<XLSN>k@>i6ebgiSSdI:22
+R3
+R40
+R41
+R42
+L0 30
+R7
+r1
+31
+R43
+R44
+R45
+R9
+Z49 !s100 oH>?@TP3BA1l<]MKJJ2532
+!i10b 1
+!s85 0
+!s101 -O0
+vreset_circuit_vlg_vec_tst
+Z50 I=64bS59cTF>A]fgOKNG`Y1
+Z51 VcKo;kHI`I@LOVUL?n3kh]1
+R3
+R40
+R41
+R42
+Z52 L0 182
+R7
+r1
+31
+R43
+R44
+R45
+R9
+Z53 !s100 MEX@ZmgL7kk^YzX6kWS9H2
+!i10b 1
+!s85 0
+!s101 -O0
