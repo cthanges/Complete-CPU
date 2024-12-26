@@ -61,30 +61,30 @@ ARCHITECTURE SYN OF system_memory IS
 	GENERIC (
 		clock_enable_input_a		: STRING;
 		clock_enable_output_a		: STRING;
-		init_file		: STRING;
+		init_file		        : STRING;
 		intended_device_family		: STRING;
-		lpm_hint		: STRING;
-		lpm_type		: STRING;
-		numwords_a		: NATURAL;
-		operation_mode		: STRING;
-		outdata_aclr_a		: STRING;
-		outdata_reg_a		: STRING;
+		lpm_hint		        : STRING;
+		lpm_type		        : STRING;
+		numwords_a		        : NATURAL;
+		operation_mode		        : STRING;
+		outdata_aclr_a		        : STRING;
+		outdata_reg_a		        : STRING;
 		power_up_uninitialized		: STRING;
-		widthad_a		: NATURAL;
-		width_a		: NATURAL;
-		width_byteena_a		: NATURAL
+		widthad_a		        : NATURAL;
+		width_a		                : NATURAL;
+		width_byteena_a		        : NATURAL
 	);
 	PORT (
-			address_a	: IN STD_LOGIC_VECTOR (5 DOWNTO 0);
-			clock0	: IN STD_LOGIC ;
-			data_a	: IN STD_LOGIC_VECTOR (31 DOWNTO 0);
-			wren_a	: IN STD_LOGIC ;
-			q_a	: OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
+			address_a	        : IN STD_LOGIC_VECTOR (5 DOWNTO 0);
+			clock0	                : IN STD_LOGIC ;
+			data_a	                : IN STD_LOGIC_VECTOR (31 DOWNTO 0);
+			wren_a	                : IN STD_LOGIC ;
+			q_a	                : OUT STD_LOGIC_VECTOR (31 DOWNTO 0)
 	);
 	END COMPONENT;
 
 BEGIN
-	q    <= sub_wire0(31 DOWNTO 0);
+	q <= sub_wire0(31 DOWNTO 0);
 
 	altsyncram_component : altsyncram
 	GENERIC MAP (
