@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity UZE is
 	port(
-		UZE_in	:	in std_logic_vector(31 downto 0);
-		UZE_out	:	out std_logic_vector(31 downto 0)
+		UZE_in	: in std_logic_vector(31 downto 0);
+		UZE_out	: out std_logic_vector(31 downto 0)
 	);
 end entity;
 
