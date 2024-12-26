@@ -3,10 +3,10 @@ use ieee.std_logic_1164.all;
 
 entity adder4 is
 port(
-     Cin    :  in std_logic;
-     X,Y    :  in std_logic_vector(3 downto 0);
-     S      :  out  std_logic_vector(3 downto 0);
-     Cout   :  out  std_logic
+     Cin    : in std_logic;
+     X,Y    : in std_logic_vector(3 downto 0);
+     S      : out  std_logic_vector(3 downto 0);
+     Cout   : out  std_logic
 );
 end adder4;
 
