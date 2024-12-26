@@ -21,7 +21,7 @@ begin
         if clr = '1' then
             Q <= (others => '0');
         elsif ((clk'event and clk = '1') and (ld = '1')) then 
-			Q <= d;
+	    Q <= d;
         end if;
-       end process;
-      end Behaviour;
+    end process;
+end Behaviour;
