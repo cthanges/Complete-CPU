@@ -6,12 +6,12 @@ use ieee.numeric_std.all;
 
 entity ALU is
 	port(  
-		  a   :  in std_logic_vector(31 downto 0);
-		  b   :  in std_logic_vector(31 downto 0);
-		  op  :  in std_logic_vector(2 downto 0);
-		  result : out  std_logic_vector(31 downto 0);
-		  zero : out std_logic;
-		  cout : out std_logic
+		  a            :  in std_logic_vector(31 downto 0);
+		  b            :  in std_logic_vector(31 downto 0);
+		  op           :  in std_logic_vector(2 downto 0);
+		  result       : out  std_logic_vector(31 downto 0);
+		  zero         : out std_logic;
+		  cout         : out std_logic
 		  );
 end ALU;
 
@@ -20,18 +20,18 @@ architecture Behaviour of ALU is
 	port(
 		Cin    :  in std_logic;
 		X,Y    :  in std_logic_vector(31 downto 0);
-		S    :  out  std_logic_vector(31 downto 0);
-		Cout :  out  std_logic );
+		S      :  out  std_logic_vector(31 downto 0);
+		Cout   :  out  std_logic );
 	
 	end component;
 	
-	signal result_s: std_logic_vector(31 downto 0):= (others => '0');
-	signal result_add: std_logic_vector(31 downto 0):= (others => '0');
-	signal result_sub: std_logic_vector(31 downto 0):= (others => '0');
-	signal cout_s  : std_logic := '0';
-	signal cout_add  : std_logic := '0';
-	signal cout_sub  : std_logic := '0';
-	signal zero_s    : std_logic:= '0';
+	signal result_s       : std_logic_vector(31 downto 0):= (others => '0');
+	signal result_add     : std_logic_vector(31 downto 0):= (others => '0');
+	signal result_sub     : std_logic_vector(31 downto 0):= (others => '0');
+	signal cout_s         : std_logic := '0';
+	signal cout_add       : std_logic := '0';
+	signal cout_sub       : std_logic := '0';
+	signal zero_s         : std_logic:= '0';
 	
 begin 
 	  add0 : adder32 port map (op(2), a, b, result_add,cout_add);
