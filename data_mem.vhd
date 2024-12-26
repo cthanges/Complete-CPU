@@ -6,14 +6,14 @@ entity data_mem is
 port(
 	clk				: in std_logic;
 	addr				: in unsigned(7 downto 0);
-	data_in			: in std_logic_vector(31 downto 0);
+	data_in			        : in std_logic_vector(31 downto 0);
 	wen				: in std_logic;
-	en					: in std_logic;
+	en				: in std_logic;
 	data_out			: out std_logic_vector(31 downto 0)
 	);
 end data_mem;
 
-architecture Behavior of  data_mem is 
+architecture Behavior of data_mem is 
 	type RAM is array (0 to 255) of std_logic_vector(31 downto 0);
 	signal DATAMEM : RAM;
 begin 
