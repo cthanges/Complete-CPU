@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity RED is 
 port (
-	RED_in	:	in std_logic_vector(31 downto 0);
-	RED_out	:	out unsigned(7 downto 0)
+	RED_in	: in std_logic_vector(31 downto 0);
+	RED_out	: out unsigned(7 downto 0)
 );
 end entity;
 
