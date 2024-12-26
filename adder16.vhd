@@ -3,21 +3,21 @@ use ieee.std_logic_1164.all;
 
 entity adder16 is
 port(
-   	Cin    :  in std_logic;
- 	   X,Y    :  in std_logic_vector(15 downto 0);
-		S    :  out  std_logic_vector(15 downto 0);
-		Cout :  out  std_logic
-		);
+   	Cin    : in std_logic;
+ 	X,Y    : in std_logic_vector(15 downto 0);
+        S      : out  std_logic_vector(15 downto 0);
+	Cout   : out  std_logic
+);
 end adder16;
 
 
 architecture Behaviour of adder16 is
 	component adder4
 	port(
-		Cin    :  in std_logic;
-		X,Y    :  in std_logic_vector(3 downto 0);
-		S    :  out  std_logic_vector(3 downto 0);
-		Cout :  out  std_logic
+		Cin    : in std_logic;
+		X,Y    : in std_logic_vector(3 downto 0);
+		S      : out  std_logic_vector(3 downto 0);
+		Cout   : out  std_logic
 	   );
 end component;
 	
