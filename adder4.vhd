@@ -3,18 +3,18 @@ use ieee.std_logic_1164.all;
 
 entity adder4 is
 port(
-	Cin    :  in std_logic;
-	X,Y    :  in std_logic_vector(3 downto 0);
-	S      :  out  std_logic_vector(3 downto 0);
-	Cout   :  out  std_logic
+     Cin    :  in std_logic;
+     X,Y    :  in std_logic_vector(3 downto 0);
+     S      :  out  std_logic_vector(3 downto 0);
+     Cout   :  out  std_logic
 );
 end adder4;
 
 architecture Behaviour of adder4 is
 	component fulladd
 	port(
-	Cin, x, y : in  std_logic;
-	s, Cout   : out std_logic
+	     Cin, x, y : in  std_logic;
+	     s, Cout   : out std_logic
 	);
 	end component;
 	
