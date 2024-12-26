@@ -7,7 +7,7 @@ entity reset_circuit is
 	port(
 		reset : in std_logic;
 		clk : in std_logic;
-		enable_PD : out std_logic :='1';
+		enable_PD : out std_logic := '1';
 		clr_PC : out std_logic
 	);
 end reset_circuit;
