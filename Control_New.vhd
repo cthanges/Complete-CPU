@@ -3,21 +3,21 @@ use ieee.std_logic_1164.ALL;
 
 ENTITY Control_New IS
 	PORT(
-			clk, mclk						: IN	STD_LOGIC;
-			enable							: IN	STD_LOGIC;
-			statusC, statusZ				: IN	STD_LOGIC;
-			INST								: IN 	STD_LOGIC_VECTOR(31 DOWNTO 0);
-			A_MUX, B_MUX					: OUT	STD_LOGIC;
-			IM_MUX1, REG_Mux				: OUT	STD_LOGIC;
-			IM_MUX2, DATA_Mux				: OUT	STD_LOGIC_VECTOR(1 DOWNTO 0);
-			ALU_op							: OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
-			inc_PC, ld_PC					: OUT	STD_LOGIC;
-			clr_IR							: OUT	STD_LOGIC;
-			ld_IR								: OUT	STD_LOGIC;
-			clr_A, clr_B, clr_C, clr_Z	: OUT	STD_LOGIC;
-			ld_A, ld_B, ld_C, ld_Z		: OUT	STD_LOGIC;
-			T									: OUT	STD_LOGIC_VECTOR(2 DOWNTO 0);
-			wen, en							: OUT	STD_LOGIC
+			clk, mclk			: IN STD_LOGIC;
+			enable				: IN STD_LOGIC;
+			statusC, statusZ		: IN STD_LOGIC;
+			INST				: IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+			A_MUX, B_MUX			: OUT STD_LOGIC;
+			IM_MUX1, REG_Mux		: OUT STD_LOGIC;
+			IM_MUX2, DATA_Mux		: OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+			ALU_op				: OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+			inc_PC, ld_PC			: OUT STD_LOGIC;
+			clr_IR				: OUT STD_LOGIC;
+			ld_IR				: OUT STD_LOGIC;
+			clr_A, clr_B, clr_C, clr_Z	: OUT STD_LOGIC;
+			ld_A, ld_B, ld_C, ld_Z		: OUT STD_LOGIC;
+			T				: OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+			wen, en				: OUT STD_LOGIC
 	);
 END Control_New;
 
@@ -598,8 +598,8 @@ BEGIN
 	END process;
 	
 	WITH present_state select
-		T	<= "001" when state_0,
-				"010" when state_1,
-				"100" when state_2,
-				"001" when others;
+		T <= "001" when state_0,
+		     "010" when state_1,
+		     "100" when state_2,
+		     "001" when others;
 END description;
