@@ -3,20 +3,20 @@ use ieee.std_logic_1164.all;
 
 entity adder32 is
 port(
-		Cin    :  in std_logic;
-		X,Y    :  in std_logic_vector(31 downto 0);
-		S      :  out  std_logic_vector(31 downto 0);
-		Cout   :  out  std_logic
+		Cin    : in std_logic;
+		X,Y    : in std_logic_vector(31 downto 0);
+		S      : out  std_logic_vector(31 downto 0);
+		Cout   : out  std_logic
 		);
 end adder32;
 
 architecture Behaviour of adder32 is
 	component adder16
 	port(
-		Cin    :  in std_logic;
-		X,Y    :  in std_logic_vector(15 downto 0);
-		S      :  out  std_logic_vector(15 downto 0);
-		Cout   :  out  std_logic
+		Cin    : in std_logic;
+		X,Y    : in std_logic_vector(15 downto 0);
+		S      : out  std_logic_vector(15 downto 0);
+		Cout   : out  std_logic
 	);
 	end component;
 	
