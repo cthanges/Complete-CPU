@@ -22,6 +22,6 @@ architecture Behaviour of adder32 is
 	
 	signal C : std_logic;
 begin
-	stage0 : adder16 port map(Cin,  X(15 downto 0), Y(15 downto 0), S(15 downto 0), C);
-	stage1 : adder16 port map(C, X(31 downto 16), Y(31 downto 16), S(31 downto 16), Cout);
+	stage0: adder16 port map(Cin,  X(15 downto 0), Y(15 downto 0), S(15 downto 0), C);
+	stage1: adder16 port map(C, X(31 downto 16), Y(31 downto 16), S(31 downto 16), Cout);
 end Behaviour;
