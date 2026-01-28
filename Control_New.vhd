@@ -271,7 +271,7 @@ BEGIN
 					ld_Z <= '0';
 					A_Mux <= '1';
 					
-				elsif Instruction_sig = "0000" then --LDBI
+				elsif Instruction_sig = "0001" then --LDBI
 					clr_IR <= '0';
 					ld_IR <= '0';
 					ld_PC <= '0';
