@@ -25,8 +25,7 @@ The purpose of this project is to implement and simulate a complete Semi-RISC CP
 - Coordinates with the reset circuit for `Clr_PC` generation outside the control unit
 
 ### 3. Reset Circuit
-- Forces `enable_PD` low and `clr_PC` high when `reset` is asserted, driving the control unit to `T0` and clearing the PC.
-- Uses a 4-cycle counter (`clk0`..`clk3`) to hold reset sequencing before releasing the CPU.
-- Deasserts `clr_PC` and re-enables the datapath/control after the reset delay window.
-- Implemented synchronously on the rising edge of `Clk`.
-
+- Forces `enable_PD` low and `clr_PC` high when `reset` is asserted, driving the control unit to `T0` and clearing the PC
+- Uses a 4-cycle counter (`clk0`, `clk1`, `clk2`, `clk3`) to hold reset sequencing before releasing the CPU
+- Deasserts `clr_PC` and re-enables the datapath/control after the reset delay window
+- Implemented synchronously on the rising edge of `Clk`
