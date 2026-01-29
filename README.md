@@ -5,7 +5,7 @@ The purpose of this project is to implement and simulate a complete Semi-RISC CP
 
 ## Features
 ### 1. Data Path
-- Implements the 32-bit CPU data path by interconnecting the PC, IR, Registers (A, B, C, Z), ALU, data memory unit, and required multiplexers
+- Interconnects the PC, IR, Registers (A, B, C, Z), ALU, data memory unit, and required multiplexers
 - Exposes PC, IR, and Register (A, B, C, Z) outputs as top-level outputs to support testing and waveform observation
 - Uses separate clocks: 
     - `Clk` for sequential elements (PC/IR/registers)
