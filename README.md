@@ -41,4 +41,4 @@ The purpose of this project is to use Altera Quartus II to implement and simulat
 - PC uses the lower address bits to index 64×32 instruction memory words (6-bit address)
 
 ### Results
-Refer to this document: [CPU System Memory Implementation and Functional Simulations](https://github.com/cthanges/Complete-CPU/blob/main/CPU%20System%20Memory%20Implementation%20and%20Functional%20Simulations.pdf)
+Refer to this document: [CPU System Memory Implementation and Functional Simulations](https://github.com/cthanges/Complete-CPU/blob/main/CPU%20System%20Memory%20Implementation%20and%20Functional%20Simulations.pdf).
