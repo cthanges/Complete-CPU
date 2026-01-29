@@ -1,7 +1,7 @@
 # Complete CPU
 
 ## Summary
-The purpose of this project is to implement and simulate a complete Semi-RISC CPU that consists of a data path, control unit, and a reset circuit in correspondance with the [CPU specification document](https://www.ee.torontomu.ca/~courses/coe608/labs/CPU_Specification.pdf).
+The purpose of this project is to implement and simulate a complete semi-RISC CPU that consists of a data path, control unit, and a reset circuit in correspondance with the [CPU specification document](https://www.ee.torontomu.ca/~courses/coe608/labs/CPU_Specification.pdf).
 
 ## Features
 ### 1. Data Path
@@ -29,3 +29,12 @@ The purpose of this project is to implement and simulate a complete Semi-RISC CP
 - Uses a 4-cycle counter (`clk0`, `clk1`, `clk2`, `clk3`) to hold reset sequencing before releasing the CPU
 - Deasserts `clr_PC` and re-enables the datapath/control after the reset delay window
 - Implemented synchronously on the rising edge of `Clk`
+
+## Simulation
+<!--
+- Uses a top-level simulation wrapper that instantiates the CPU and instruction memory for waveform-based testing
+- The wrapper exposes `T` state, PC, IR, and register outputs to simplify debugging during simulation
+- Instruction memory is provided via the MegaCore RAM block (`system_memory`) initialized with a `.mif` file
+- The CPU instance (`cpu1`) connects datapath, control unit, and reset circuit as the complete system under test
+- Two clocks are used in simulation: `memClk` for instruction/data memory and `cpuClk` for the CPU core (CPU clock runs at least 2× slower than memory clock)
+- Program counter uses the lower address bits to index 64×32 instruction memory words (6-bit address)-->
