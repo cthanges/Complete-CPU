@@ -5,8 +5,8 @@ The purpose of this project is to implement and simulate a complete semi-RISC CP
 
 ## Features
 ### 1. Data Path
-- Interconnects the PC, IR, Registers (A, B, C, Z), ALU, data memory unit, and required multiplexers
-- Exposes PC, IR, and Register (A, B, C, Z) outputs as top-level outputs to support testing and waveform observation
+- Interconnects the PC, IR, registers (A, B, C, Z), ALU, data memory unit, and required multiplexers
+- Exposes PC, IR, and register (A, B, C, Z) outputs as top-level outputs to support testing and waveform observation
 - Uses separate clocks: 
     - `Clk` for sequential elements (PC/IR/registers)
     - `mClk` for data memory timing
@@ -31,10 +31,14 @@ The purpose of this project is to implement and simulate a complete semi-RISC CP
 - Implemented synchronously on the rising edge of `Clk`
 
 ## Simulation
-<!--
-- Uses a top-level simulation wrapper that instantiates the CPU and instruction memory for waveform-based testing
-- The wrapper exposes `T` state, PC, IR, and register outputs to simplify debugging during simulation
+### Description
+- Uses a top-level simulation entity that instantiates the CPU and instruction memory for waveform-based testing
+- The entity exposes `T` state, PC, IR, and register outputs to simplify debugging during simulation
 - Instruction memory is provided via the MegaCore RAM block (`system_memory`) initialized with a `.mif` file
-- The CPU instance (`cpu1`) connects datapath, control unit, and reset circuit as the complete system under test
-- Two clocks are used in simulation: `memClk` for instruction/data memory and `cpuClk` for the CPU core (CPU clock runs at least 2× slower than memory clock)
-- Program counter uses the lower address bits to index 64×32 instruction memory words (6-bit address)-->
+- The CPU instance (`cpu1`) connects the datapath, the control unit, and the reset circuit as the complete system under test
+- Two clocks are used in simulation: 
+    - `memClk` for instruction/data memory
+    - `cpuClk` for the CPU core (CPU clock runs at least 2× slower than memory clock)
+- PC uses the lower address bits to index 64×32 instruction memory words (6-bit address)
+
+### Results
