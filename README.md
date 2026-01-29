@@ -1,7 +1,6 @@
 # Complete CPU
-
 ## Summary
-The purpose of this project is to implement and simulate a complete semi-RISC CPU that consists of a data path, control unit, and a reset circuit in correspondance with the [CPU specification document](https://www.ee.torontomu.ca/~courses/coe608/labs/CPU_Specification.pdf).
+The purpose of this project is to use Altera Quartus II to implement and simulate a complete semi-RISC CPU that consists of a data path, control unit, and a reset circuit in correspondance with the [CPU specification document](https://www.ee.torontomu.ca/~courses/coe608/labs/CPU_Specification.pdf).
 
 ## Features
 ### 1. Data Path
