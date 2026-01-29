@@ -31,14 +31,14 @@ The purpose of this project is to use Altera Quartus II to implement and simulat
 
 ## Simulation
 ### Description
-- Uses a top-level simulation entity that instantiates the CPU and instruction memory for waveform-based testing
+- A top-level simulation entity is used to instantiate the CPU and instruction memory for waveform-based testing
 - The entity exposes `T` state, PC, IR, and register outputs to simplify debugging during simulation
 - Instruction memory is provided via the MegaCore RAM block (`system_memory`) initialized with a `.mif` file
 - The CPU instance (`cpu1`) connects the datapath, the control unit, and the reset circuit as the complete system under test
 - Two clocks are used in simulation: 
     - `memClk` for instruction/data memory
     - `cpuClk` for the CPU core (CPU clock runs at least 2× slower than memory clock)
-- PC uses the lower address bits to index 64×32 instruction memory words (6-bit address)
+- The PC uses the lower address bits to index 64×32 instruction memory words (6-bit address)
 
 ### Results
 Refer to this document: [CPU System Memory Implementation and Functional Simulations](https://github.com/cthanges/Complete-CPU/blob/main/CPU%20System%20Memory%20Implementation%20and%20Functional%20Simulations.pdf).
